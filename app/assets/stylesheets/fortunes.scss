@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', Helvetica , Arial, 'æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“', 'YuGothic', 'ãƒ¡ã‚¤ãƒªã‚ª', 'Meiryo', sans-serif; 
+  font-size: 20px;
+  color: #FFFF88;
+  font-weight: bold;
+}
+
+
+.body {
+  background-color:#222222;
+  height: 700px;
+  .fortunes__body {
+    padding: 80px;
+    &__main {
+      &__body {
+        .fortunes__modal__wrapper {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.6);
+          z-index: 100;
+          display: none;
+          &--close {
+            position: absolute;
+            top: 20%;
+            left: 34%;
+            padding: 20px 0 40px;
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-radius: 400px;
+            background-color: #FFFAF0;
+            .fortune__close__icon {
+              position: absolute;
+              top: 12px;
+              right: 12px;
+              color: #FFFAF0;
+              cursor: pointer;
+            }
+            &__text {
+              margin-top: 30px;
+              font-size: 40px;
+              color: #FF4F50;
+              .fortunes__modal__wrapper--close__text__1 {
+                display: block;
+                text-decoration: none;
+                color: #111111;
+                list-style: none;
+                margin-top: 25px;
+                .limit {
+                }
+              }
+              .fortunes__modal__wrapper--close__text__2 {
+                display: block;
+                text-decoration: none;
+                color: #111111;
+                font-size: 30px;
+                list-style: none;
+                margin-top: 25px;
+                .situation {
+                }
+              }
+              .fortunes__modal__wrapper--close__text__3 {
+                display: block;
+                text-decoration: none;
+                color: #111111;
+                font-size: 30px;
+                list-style: none;
+                margin-top: 25px;
+                .result {
+                }
+              }
+            }
+          }
+        }
+        .sign {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          .sign__main {
+            .fortunes__logo1 {
+              border-radius: 70px;
+              font-size: 20px;
+              color: #FFFF88;
+              cursor: pointer;
+            }
+          }
+        }
+        .sign {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+          .sign__main {
+            .fortunes__logo1 {
+              font-size: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      &__footer {
+        &__text {
+
+        }
+      }
+    }
+  }
+}
